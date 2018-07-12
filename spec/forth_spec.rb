@@ -1,5 +1,7 @@
+require './forth.rb'
+
 describe Forth do
-  context 'addition' do
+  it 'addition' do
     forth = Forth.new
 
     expect(forth.interpret("1")).to eq([1])
